@@ -1,7 +1,7 @@
 import { expect } from "chai"
 import Calculator from "../src/calculator"
 
-describe.only("hooks", () => {
+describe("hooks", () => {
     var calculator:Calculator
     before(() => {
         console.log("this runs one time before test")
@@ -29,7 +29,7 @@ describe.only("hooks", () => {
         })
     })
 
-    describe.skip("nested-multiply-divide", () => {
+    describe("nested-multiply-divide", () => {
         it("multiply-test", () => {
             const result = calculator.multiply(4,5)
             expect(result).equal(20)
